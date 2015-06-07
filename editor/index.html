@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html ng-app="NgPixelEditor">
+<head>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-colorpicker-module.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/colorpicker.min.css">
+    <link rel="stylesheet" href="../bower_components/components-font-awesome/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="ngPixelEditor.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>ng-pixel editor</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">ng-pixel editor</a>
+        </div>
+    </div>
+</nav>
+
+<div ng-controller="EditorController as vm">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><b>STEP 1</b> Set cell numbers</h3>
+            <small>Select the number of width, height.</small>
+        </div>
+
+        <div class="panel-body">
+            <form name="sizeForm" ng-submit="vm.generateSquares(vm.width, vm.height)" novalidate>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group form-group-sm">
+                            <label class="control-label" for="formHeight">Height</label>
+
+                            <select id="formHeight" class="form-control" ng-model="vm.height" ng-required="true">
+                                <option ng-repeat="n in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]" value="{{n}}">
+                                    {{n}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-sm">
+                            <label class="control-label" for="formWidth">Width</label>
+
+                            <select id="formWidth" class="form-control" ng-model="vm.width" ng-required="true">
+                                <option ng-repeat="n in  [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]" value="{{n}}">
+                                    {{n}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group form-group-sm">
+                        <div class="col-md-2">
+                            <input type="submit" class="btn btn-default" type="submit" value="Generate Panel"
+                                   ng-disabled="sizeForm.$invalid">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><b>STEP 2</b> Pick colors</h3>
+            <small>Click cell, and select the color.</small>
+        </div>
+        <div class="panel-body" ng-show="vm.squares.length > 0">
+            <p><i class="fa fa-th fs5 pointer" ng-init="vm.isDebug = true" ng-click="vm.isDebug = !vm.isDebug">&nbsp;
+                <span ng-show="vm.isDebug">Hide border</span>
+                <span ng-show="!vm.isDebug">Show border</span>
+            </i></p>
+
+            <div ng-repeat='row in vm.squares' style='clear: both'>
+                <div ng-repeat="d in row.xels"
+                     ng-model="d.color"
+                     colorpicker
+                     colorpicker-with-input="true"
+                     colorpicker-position="top"
+                     class="sq"
+                     ng-class="{debugLine: vm.isDebug}"
+                     ng-style="{background: d.color}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><b>STEP 3</b> Copy result</h3>
+            <small>Copy following code, set to <code>data</code> property of ng-pixel tag.</small>
+        </div>
+        <div class="panel-body" ng-show="vm.squares.length > 0">
+            <pre>{{vm.squares}}</pre>
+        </div>
+    </div>
+</div>
+
+<div class="panel-footer">
+    <span>©&nbsp;<a href="http://yutarotanaka.com/">YUTARO TANAKA</a></span>
+    <span>&nbsp;&nbsp;
+    <a href="https://github.com/TanakaYutaro/ng-pixel">ng-pixel</a> is maintained by <a
+                href="https://github.com/TanakaYutaro">TanakaYutaro</a>
+    </span>
+</div>
+
+</body>
+</html>
