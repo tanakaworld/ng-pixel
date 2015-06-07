@@ -23,6 +23,8 @@ Using [ngPixel editor](http://tanakayutaro.github.io/ng-pixel/editor/), you can 
 
 4. Done! You can draw following pixel pattern!!
 
+	![ngPixel example](https://raw.githubusercontent.com/wiki/tanakayutaro/ng-pixel/images/ngPixel-Installation-1.png)
+
 ## ngPixel attributes
 * data : Pixel color info. [ngPixel editor](http://tanakayutaro.github.io/ng-pixel/editor/) support to genarating.
 * config : Each pixel size (px). Default `width: 20`, `height: 20`
