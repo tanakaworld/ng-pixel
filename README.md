@@ -4,9 +4,19 @@ An AngularJS simple directive that generate pixel pattern.
 ## Dependencies
 * angular.js, any version starting with 1
 
+## Installation
+
+#### Manual Download
+Download the from [here](https://github.com/TanakaYutaro/ng-pixel/releases/)
+
+#### Bower
+```
+bower install ng-pixel
+```
+
 ## Introduction
 
-1. Copy `src/ng-pixel.js` to your project directory
+1. Copy `ng-pixel.js` to your project directory
 
 2. Set `ngPixel` as a dependency in your module
 
