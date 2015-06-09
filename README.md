@@ -1,8 +1,6 @@
 ## ngPixel - Generate pixel pattern using AngularJS
 An AngularJS simple directive that generate pixel pattern.
-
-![ngPixel example 1](https://raw.githubusercontent.com/wiki/tanakayutaro/ng-pixel/images/ngPixel-Example-1.png)
-
+![ngPixel logo](https://raw.githubusercontent.com/wiki/tanakayutaro/ng-pixel/images/ng-pixel-logo.png)
 
 ## Dependencies
 * angular.js, any version starting with 1
@@ -45,10 +43,15 @@ Using [ngPixel editor](http://tanakayutaro.github.io/ng-pixel/editor/), you can 
 	```html
 	<ng-pixel data='Generated color info' config='{ width: 30, height: 30 }' />
 	```
+## Example
+coming soon...
+
+![ngPixel example 1](https://raw.githubusercontent.com/wiki/tanakayutaro/ng-pixel/images/ngPixel-Example-1.png)
 
 ## TODO
 * ngPixel
-	* bind events to each cells
+	* event binding (each cells)
+	* pixel animation
 * ngPixel Editor
 	* import ngPixel json
 	* import image, and convert to json
