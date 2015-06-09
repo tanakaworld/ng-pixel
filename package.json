@@ -1,0 +1,31 @@
+{
+    "name": "ng-pixel",
+    "version": "1.0.0",
+    "description": "Simple AngularJS directive that generate pixel pattern.",
+    "main": "index.js",
+    "scripts": {
+        "test": "./node_modules/.bin/karma init"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/TanakaYutaro/ng-pixel.git"
+    },
+    "keywords": [
+        "angularjs",
+        "angular",
+        "directive",
+        "ngpixel",
+        "ng pixel",
+        "ng-pixel",
+        "ngPixel",
+        "ng pixel",
+        "ng",
+        "pixel"
+    ],
+    "author": "yutaro <yutaro.tanaka.world@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/TanakaYutaro/ng-pixel/issues"
+    },
+    "homepage": "https://github.com/TanakaYutaro/ng-pixel"
+}
