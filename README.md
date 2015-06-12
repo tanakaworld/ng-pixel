@@ -43,10 +43,26 @@ Using [ngPixel editor](http://tanakayutaro.github.io/ng-pixel/editor/), you can 
 	```html
 	<ng-pixel data='Generated color info' config='{ width: 30, height: 30 }' />
 	```
+
+## Editor
+
+### STEP 1 Set cell numbers
+Select the number of width, height.
+
+### STEP 2 Pick colors
+Click cell, and select the color.
+
+![ngPixel example 1](https://raw.githubusercontent.com/wiki/tanakayutaro/ng-pixel/images/ngPixel-Editor-1.png)
+
+### STEP 3 Copy result
+Copy generated code, and set to data property of ng-pixel tag.
+
+
 ## Example
 coming soon...
 
 ![ngPixel example 1](https://raw.githubusercontent.com/wiki/tanakayutaro/ng-pixel/images/ngPixel-Example-1.png)
+
 
 ## TODO
 * ngPixel
