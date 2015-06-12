@@ -46,6 +46,8 @@ Using [ngPixel editor](http://tanakayutaro.github.io/ng-pixel/editor/), you can 
 
 ## Editor
 
+Using [ngPixel editor](http://tanakayutaro.github.io/ng-pixel/editor/), you can generate pixel data.
+
 ### STEP 1 Set cell numbers
 Select the number of width, height.
 
