@@ -1,35 +1,36 @@
 {
-    "name": "ng-pixel",
-    "version": "1.0.0",
-    "homepage": "https://github.com/TanakaYutaro/ng-pixel",
-    "authors": [
-        "yutaro <yutaro.tanaka.world@gmail.com>"
-    ],
-    "description": "Simple AngularJS directive that generate pixel pattern.",
-    "main": "src/ng-pixel.js",
-    "keywords": [
-        "angularjs",
-        "angular",
-        "directive",
-        "ngpixel",
-        "ng pixel",
-        "ng-pixel",
-        "ngPixel",
-        "ng pixel",
-        "ng",
-        "pixel"
-    ],
-    "dependencies": {
-        "angular": "~1",
-        "angular-sanitize": "~1"
-    },
-    "license": "MIT",
-    "private": false,
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ]
+  "name": "ng-pixel",
+  "version": "1.0.0",
+  "homepage": "https://github.com/TanakaYutaro/ng-pixel",
+  "authors": [
+    "yutaro <yutaro.tanaka.world@gmail.com>"
+  ],
+  "description": "Simple AngularJS directive that generate pixel pattern.",
+  "main": "src/ng-pixel.js",
+  "keywords": [
+    "angularjs",
+    "angular",
+    "directive",
+    "ngpixel",
+    "ng pixel",
+    "ng-pixel",
+    "ngPixel",
+    "ng pixel",
+    "ng",
+    "pixel"
+  ],
+  "dependencies": {
+    "angular": "~1",
+    "angular-sanitize": "~1",
+    "jasmine-jquery": "~2.1.0"
+  },
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
