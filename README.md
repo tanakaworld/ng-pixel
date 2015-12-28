@@ -1,7 +1,7 @@
 ## ngPixel - Generate pixel pattern using AngularJS
 An AngularJS simple directive that generate pixel pattern.
 
-[![Build Status](https://travis-ci.org/TanakaYutaro/ng-pixel.svg?branch=master)](https://travis-ci.org/TanakaYutaro/ng-pixel)
+[![Build Status](https://travis-ci.org/tanakaworld/ng-pixel.svg?branch=master)](https://travis-ci.org/TanakaYutaro/ng-pixel)
 
 
 ![ngPixel logo](https://raw.githubusercontent.com/wiki/tanakayutaro/ng-pixel/images/ng-pixel-logo.png)
